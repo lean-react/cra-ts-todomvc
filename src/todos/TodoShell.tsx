@@ -8,7 +8,11 @@ import { Store, reducer } from './store';
 const TodoShell = () => {
 
   const initialState: AppState = {
-    todos: [],
+    todos: [
+      { id: -3, title: 'Implement TodoItem logic', completed: true },
+      { id: -2, title: 'Unit Testing code', completed: false },
+      { id: -1, title: 'Backend Persistence', completed: false },
+    ],
     filter: Visibility.All
   };
 
